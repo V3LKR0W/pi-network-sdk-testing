@@ -35,8 +35,7 @@
             try {
                 let value = document.getElementById('pi').value
                 console.log(value)
-                const transferRequest = await PiNetworkClient.RequestTransfer(parseInt(value), pireason.value);
-                console.log(transferRequest.status)
+                PiNetworkClient.RequestTransfer(parseInt(value), pireason.value);
               } catch(err) {
                 console.log(err)
               }
