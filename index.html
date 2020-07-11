@@ -15,7 +15,7 @@
     <div class="text-center"><button onclick="wq()" class="btn btn-success btn-md text-center">Send</button></div>
 
     <script>
-        const PiNetworkClient = window.PiNetwork;
+        PiNetworkClient = window.PiNetwork;
         
         async function ao(){
             var transferRequest = await PiNetworkClient.Balance();
